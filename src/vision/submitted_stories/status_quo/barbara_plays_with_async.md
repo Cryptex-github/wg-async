@@ -226,7 +226,7 @@ let mut futures: Vec<Box<dyn Future<Output=()>>> = Vec::new();
 
 She then notices that her IDE (VSCode + rust-analyzer) has a new error on
 each call to push.  The code assist on each error says `Store this in the heap
-by calling 'Box::new'`.  This is exactly what she wants, and it happy that
+by calling 'Box::new'`.  This is exactly what she wants, and is happy that
 rust-analyzer perfectly handled this case.
 
 Now each future is boxed up, but there is one final error still,
